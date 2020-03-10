@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/msalvar"
+        android:icon="@drawable/ic_save"
+        android:title="Salvar"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/malterar"
+        android:icon="@drawable/ic_update"
+        android:title="Alterar"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/mexcluir"
+        android:icon="@drawable/ic_delete"
+        android:title="Excluir"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/mbuscar"
+        android:icon="@drawable/ic_search"
+        android:title="Buscar"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/msair"
+        android:title="Sair"
+        android:icon="@drawable/ic_exit_to_app"
+        app:showAsAction="ifRoom"/>
+</menu>
