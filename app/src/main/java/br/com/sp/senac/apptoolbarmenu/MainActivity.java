@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -73,13 +74,26 @@ public class MainActivity extends AppCompatActivity {
                         Toast.LENGTH_SHORT).show();
                 ;
                 break;
+            case R.id.mabrir:
+                startActivity(new Intent(getApplicationContext(), SubNenu_Activity.class));
+
+                Toast.makeText(getApplicationContext(),
+                        "Cliquei no abrir",
+                        Toast.LENGTH_SHORT).show();
+                ;
+                break;
+            case R.id.msgrupo:
+                startActivity(new Intent(getApplicationContext(), grupomenu_Activity.class));
+
+                Toast.makeText(getApplicationContext(),
+                        "Cliquei no grupo",
+                        Toast.LENGTH_SHORT).show();
+                ;
+                break;
         }
         switch (item.getItemId()) {
             case R.id.msair:
-                Toast.makeText(getApplicationContext(),
-                        "Cliquei no sair",
-                        Toast.LENGTH_SHORT).show();
-                ;
+                finish();
                 break;
         }
 

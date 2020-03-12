@@ -1,13 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <group android:id="@+id/gbmenu">
+    <group android:id="@+id/gbmenu"
+        android:checkableBehavior="single">
         <item
             android:id="@+id/mgbalterar"
+
             android:title="altera" />
 
         <item
             android:id="@+id/mgbexcluir"
-            android:title="Excluir"/>
+            android:title="Excluir" />
+
+        <item
+            android:id="@+id/mgbsair"
+            android:checkable="false"
+            android:title="Sair" />
 
     </group>
+    <item android:title="outros">
+        <menu>
+            <item
+                android:id="@+id/mgbfav"
+                android:title="Favorito"
+                android:icon="@drawable/ic_favorite"/>
+            <item
+                android:id="@+id/mgbspam"
+                android:title="Spam"
+                android:icon="@drawable/ic_traffic"/>
+            <item
+                android:id="@+id/mgblixeira"
+                android:title="Lixeira"
+                android:icon="@drawable/ic_delete"/>
+        </menu>
+
+    </item>
 </menu>
+
